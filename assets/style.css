@@ -1,8 +1,152 @@
-.navbar-brand img{
-    font-size: 1.5em;
-height: 5.5rem;}
+:root {
+    --main-text-color: #fff;
+}
+
+nav {
+    background-color: #181a1c;
+}
 
 
-.navbar-collapse{
+a.nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: var(--main-text-color);
+    text-decoration: none;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+.nav-item:after {
+    content: "";
+    display: block;
+    height: 1px;
+    z-index: 2;
+    box-sizing: border-box;
+    width: 35%;
+    margin-left: 7px;
+}
+
+
+.nav-item:hover:after,
+.nav-item.active:after {
+    background-color: #d5d7d8;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .nav-link {
+        transition: none;
+    }
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.nav-link.active {
+    color: #bbbbbb !important;
+}
+
+.navbar-brand img {
+    height: 5rem;
+}
+
+
+.navbar-collapse {
     flex-grow: 0 !important;
+}
+
+.dropdown-menu {
+    background-color: #212529 !important;
+}
+
+a.dropdown-item {
+    color: #d5d7d8 !important;
+}
+
+a.dropdown-item:hover {
+    color: #000 !important;
+}
+
+button.navbar-toggler {
+    color: rgba(255, 255, 255, .5);
+    border-color: rgba(255, 255, 255, .1);
+    font-size: .75rem;
+    padding: 0.75rem;
+}
+
+/* Header Image */
+.header-image {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    text-align: center;
+    color: #fff;
+    background-image: url('../assets/images/header-image.webp');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 60vh;
+}
+
+header.header-image .btn {
+    background: #000;
+    color: #fff;
+    transition: all .5s ease;
+    transform: scale(1);
+}
+
+header.header-image .btn:hover {
+    transform: scale(1.1) perspective(1px)
+}
+
+
+@supports (-webkit-touch-callout: none) {
+    header.header-image {
+        background-attachment: scroll;
+    }
+}
+
+header.header-image .subheading {
+    font-size: 1.3rem;
+    font-style: italic;
+    line-height: 1.5rem;
+    margin-bottom: 10px;
+    font-family: Lato, sans-serif
+}
+
+header.header-image .heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 3.25rem;
+    font-family: 'Crimson Text', sans-serif
+}
+
+@media screen and (min-width: 700px) {
+
+    .header-image {
+        padding-top: 10.5rem;
+    }
+
+    .navbar-brand img {
+        height: 6rem;
+    }
+
+    .nav-item:hover:after,
+    .nav-item.active:after {
+        background-color: #d5d7d8;
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    header.header-image .subheading {
+        font-size: 1.5rem;
+        font-style: italic;
+        line-height: 1.5rem;
+        margin-bottom: 10px;
+        font-family: Lato, sans-serif
+    }
+    
+    header.header-image .heading {
+        font-size: 3rem;
+        font-weight: 700;
+        line-height: 3.25rem;
+        font-family: 'Crimson Text', sans-serif
+    }
+
 }
