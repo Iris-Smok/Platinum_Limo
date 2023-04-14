@@ -103,7 +103,7 @@ header.header-image .btn:hover {
 }
 
 header.header-image .subheading {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-style: italic;
     line-height: 1.5rem;
     margin-bottom: 10px;
@@ -111,17 +111,18 @@ header.header-image .subheading {
 }
 
 header.header-image .heading {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     font-weight: 700;
     line-height: 3.25rem;
     font-family: 'Crimson Text', sans-serif
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 600px) {
 
     .header-image {
         padding-top: 10.5rem;
-    }
+}
+
 
     .navbar-brand img {
         height: 6rem;
@@ -136,17 +137,37 @@ header.header-image .heading {
 
     header.header-image .subheading {
         font-size: 1.5rem;
-        font-style: italic;
         line-height: 1.5rem;
-        margin-bottom: 10px;
-        font-family: Lato, sans-serif
     }
     
     header.header-image .heading {
         font-size: 3rem;
-        font-weight: 700;
         line-height: 3.25rem;
-        font-family: 'Crimson Text', sans-serif
+    }
+
+}
+
+/* INTRO SECTION */
+
+.introduction-text {
+    text-align: center;
+}
+
+.page-section{
+    padding: 6rem 0;
+}
+
+.page-section h2.section-heading {
+    font-size: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 1000px) {
+
+    .introduction-text {
+        margin-left: 20%;
+        margin-right: 19%;
     }
 
 }
