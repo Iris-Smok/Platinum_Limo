@@ -229,3 +229,52 @@ header.header-image .heading {
 }
 
 
+/* OUR FLEET */
+
+/* OUR FLEET */
+.our-fleet-img {
+    max-width: 35rem;
+    margin-left: auto;
+    margin-right: auto 
+}
+.our-fleet-img img {
+    width: 100%;
+    height: auto;
+    transition: all .5s ease;
+    transform: scale(1) 
+}
+.our-fleet-img img:hover {
+    transform: scale(1.2) perspective(1px);
+    color: grey 
+}
+.our-fleet-img p {
+    margin-top: -45px;
+    font-weight: 600 
+}
+.our-fleet-img div {
+    margin-top: -15px 
+}
+.our-fleet-img .btn {
+    background-color: #000;
+    color: #fff 
+}
+.our-fleet-img .btn:hover {
+    background-color: #fff !important;
+    color: #000 !important;
+    border: 1px solid #000 
+}
+
+
+@media (max-width:1000px) {
+    .our-fleet-img p {
+        margin-top: -25px 
+   }
+}
+@media (max-width:650px) {
+    .our-fleet-img p {
+        margin-top: -50px 
+   }
+    .our-fleet-img {
+        margin-bottom: 60px 
+   }
+}
