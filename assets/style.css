@@ -151,6 +151,7 @@ header.header-image .heading {
 
 .introduction-text {
     text-align: center;
+    margin: 0 10px;
 }
 
 .page-section{
@@ -163,11 +164,11 @@ header.header-image .heading {
     margin-bottom: 1rem;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1200px) {
 
     .introduction-text {
-        margin-left: 20%;
-        margin-right: 19%;
+        margin-left: 25%;
+        margin-right: 25%;
     }
 
 }
