@@ -197,6 +197,21 @@ header.header-image .heading {
 
 }
 
+/* FEATURES */
+
+.features > .container > .row > .col-md-4{
+    padding: 0 15px;
+}
+
+
+@media screen and (min-width: 1000px) {
+
+    .features > .container > .row > .col-md-4{
+        padding: 0 40px;
+    }
+
+}
+
 /* SERVICES */
 
 .bg-services{
@@ -228,8 +243,6 @@ header.header-image .heading {
    color: #fff;
 }
 
-
-/* OUR FLEET */
 
 /* OUR FLEET */
 .our-fleet-img {
