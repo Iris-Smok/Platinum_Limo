@@ -439,4 +439,24 @@ header.header-forms .heading {
     header.header-forms .heading {
         font-size: 2.2rem;
     }
+
+    .form-group{
+        margin-left: 20px;
+    }
+}
+
+/* SPECIAL OCCASIONS HEADER */
+
+.occasions-header {
+    text-align: center;
+    color: #fff;
+    background-image: url('https://res.cloudinary.com/irissmok/image/upload/v1681794443/Platinum%20Line%20images/special-occasions-index.webp');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.header{
+    padding-top: 15rem;
+    padding-bottom: 7rem;
 }
