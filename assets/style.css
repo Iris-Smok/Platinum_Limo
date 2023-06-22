@@ -5,23 +5,27 @@
 
 /* GENERAL */
 
-h1,
+body {
+    font-family: 'Open Sans';
+}
+
+/* h1, */
 h2,
 h3,
 footer>h5,
 header.header-forms .heading {
-    font-family: 'Crimson Text', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
+    font-family: 'Spectral', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
 }
 
 /* FADE IN ANIMATION */
 
-section{
+section {
     transform: translateY(150px);
     opacity: 0;
     transition: 2s all ease;
 }
 
-section.active{
+section.active {
     transform: translateY(0);
     opacity: 1;
 }
@@ -35,6 +39,33 @@ a:not([href]):not([class]),
 a:not([href]):not([class]):hover {
     color: inherit;
     text-decoration: none
+}
+
+
+/* TOP-HEADER */
+
+.top-header{
+    background-color:#f4511e ;
+    color: #fff;
+    text-align: center;
+}
+
+.top-header div{
+    padding: 10px 0px;
+}
+
+.top-header p{
+    margin: 0;
+    line-height: 2;
+    display: inline-block;
+}
+
+@media screen and (min-width: 450px){
+
+    .top-header p{
+        padding-left: 20px;
+    }
+    
 }
 
 /* PAGE SECTIONS */
@@ -54,7 +85,7 @@ a:not([href]):not([class]):hover {
     font-size: 1rem;
     font-weight: 400;
     font-style: italic;
-    font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     margin-bottom: 4rem
 }
 
@@ -156,15 +187,43 @@ button.navbar-toggler {
 }
 
 
-header.header-image .btn {
-    background: #000;
-    color: #fff;
-    transition: all .5s ease;
-    transform: scale(1);
+.button-book {
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 18px;
+    padding: 8px 10px;
+    transition: all 0.5s;
+    cursor: pointer;
+    letter-spacing: 0.8px;
 }
 
-header.header-image .btn:hover {
-    transform: scale(1.1) perspective(1px)
+.button-book span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button-book span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: -11px;
+    right: -20px;
+    transition: 0.5s;
+    font-size: 30px;
+}
+
+.button-book:hover span {
+    padding-right: 25px;
+}
+
+.button-book:hover span:after {
+    opacity: 1;
+    right: 0;
 }
 
 
@@ -184,10 +243,10 @@ header.header-image .subheading {
 
 header.header-image .heading,
 .header-services .heading {
-    font-size: 2.7rem;
-    font-weight: 700;
-    line-height: 3.25rem;
-    font-family: 'Crimson Text', sans-serif
+    font-size: 35px;
+    line-height: 2.70rem;
+    font-family: 'Spectral', sans-serif;
+    text-shadow: 0.08em 0.08em 0.08em rgba(0, 0, 0, 0.4);
 }
 
 
@@ -195,13 +254,12 @@ header.header-image .heading,
 @media screen and (min-width: 600px) {
 
     .header-image {
-        font-size: 3rem;
         padding-top: 12.5rem;
         height: 60vh;
     }
 
     .header-services .heading {
-        font-size: 3rem;
+        font-size: 60px;
     }
 
 
@@ -222,7 +280,7 @@ header.header-image .heading,
     }
 
     header.header-image .heading {
-        font-size: 3rem;
+        font-size: 3.5rem;
         line-height: 3.25rem;
     }
 
@@ -299,7 +357,7 @@ header.header-image .heading,
 
 #services .services-item .services-caption .services-caption-subheading {
     font-style: italic;
-    font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
 }
 
 #services .services-link {
