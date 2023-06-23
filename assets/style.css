@@ -12,8 +12,7 @@ body {
 /* h1, */
 h2,
 h3,
-footer>h5,
-header.header-forms .heading {
+footer>h5 {
     font-family: 'Spectral', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
 }
 
@@ -30,23 +29,13 @@ section.active {
     opacity: 1;
 }
 
-/* A LINK */
-a:hover {
-    color: #bdbaba !important
-}
-
-a:not([href]):not([class]),
-a:not([href]):not([class]):hover {
-    color: inherit;
-    text-decoration: none
-}
 
 
 /* TOP-HEADER */
 
 .top-header{
-    background-color:#f4511e ;
-    color: #fff;
+    background-color:#D5D2CE;
+    color: #1D232A;
     text-align: center;
 }
 
@@ -187,27 +176,28 @@ button.navbar-toggler {
 }
 
 
-.button-book {
+.button-book-trip {
     border-radius: 4px;
-    background-color: #f4511e;
+    background-color:#D5D2CE;
+    color: #1D232A;
     border: none;
-    color: #FFFFFF;
     text-align: center;
     font-size: 18px;
     padding: 8px 10px;
     transition: all 0.5s;
     cursor: pointer;
     letter-spacing: 0.8px;
+    font-weight: 500;
 }
 
-.button-book span {
+.button-book-trip span {
     cursor: pointer;
     display: inline-block;
     position: relative;
     transition: 0.5s;
 }
 
-.button-book span:after {
+.button-book-trip span:after {
     content: '\00bb';
     position: absolute;
     opacity: 0;
@@ -217,11 +207,11 @@ button.navbar-toggler {
     font-size: 30px;
 }
 
-.button-book:hover span {
+.button-book-trip:hover span {
     padding-right: 25px;
 }
 
-.button-book:hover span:after {
+.button-book-trip:hover span:after {
     opacity: 1;
     right: 0;
 }
@@ -242,14 +232,14 @@ header.header-image .subheading {
 }
 
 header.header-image .heading,
-.header-services .heading {
+.header-services .heading,
+header.header-forms .heading
+ {
     font-size: 35px;
     line-height: 2.70rem;
-    font-family: 'Spectral', sans-serif;
+    font-family: 'Spectral', Arial, Helvetica, sans-serif;
     text-shadow: 0.08em 0.08em 0.08em rgba(0, 0, 0, 0.4);
 }
-
-
 
 @media screen and (min-width: 600px) {
 
@@ -258,7 +248,8 @@ header.header-image .heading,
         height: 60vh;
     }
 
-    .header-services .heading {
+    .header-services .heading,
+    header.header-forms .heading {
         font-size: 60px;
     }
 
@@ -395,14 +386,14 @@ header.header-image .heading,
 }
 
 .our-fleet-img .btn {
-    background-color: #000;
-    color: #fff
+    background-color: #D5D2CE;
+    color: #1D232A;
+    font-weight: 500;
 }
 
 .our-fleet-img .btn:hover {
-    background-color: #fff !important;
-    color: #000 !important;
-    border: 1px solid #000
+    border: 1px solid #1D232A;
+    background-color:#cccac7 !important;
 }
 
 
@@ -505,21 +496,12 @@ footer {
 }
 
 
-header.header-forms .heading {
-    font-size: 1.8rem;
-    font-weight: 700;
-}
-
 
 @media screen and (min-width: 768px) {
 
     .header-forms {
         padding-top: 13%;
         padding-bottom: 13%;
-    }
-
-    header.header-forms .heading {
-        font-size: 2.2rem;
     }
 
     .form-group {
