@@ -235,8 +235,8 @@ header.header-image .heading,
 .header-services .heading,
 header.header-forms .heading
  {
-    font-size: 35px;
-    line-height: 2.70rem;
+    font-size: 45px;
+    line-height: 3rem;
     font-family: 'Spectral', Arial, Helvetica, sans-serif;
     text-shadow: 0.08em 0.08em 0.08em rgba(0, 0, 0, 0.4);
 }
@@ -485,8 +485,9 @@ footer {
 /* AVAILABILITY */
 
 .header-forms {
-    padding-top: 30%;
-    padding-bottom: 30%;
+
+    padding-top: 45%;
+    padding-bottom: 45%;
     text-align: center;
     color: #fff;
     background-image: url('https://res.cloudinary.com/irissmok/image/upload/v1681791762/Platinum%20Line%20images/header-image.webp');
