@@ -37,24 +37,15 @@ section.active {
     background-color:#D5D2CE;
     color: #1D232A;
     text-align: center;
-}
-
-.top-header div{
     padding: 10px 0px;
 }
+
 
 .top-header p{
     margin: 0;
     line-height: 2;
     display: inline-block;
-}
-
-@media screen and (min-width: 450px){
-
-    .top-header p{
-        padding-left: 20px;
-    }
-    
+    padding-left: 7%;
 }
 
 /* PAGE SECTIONS */
@@ -122,6 +113,23 @@ a.nav-link {
     background-color: #d5d7d8;
 }
 
+@media screen and (max-width: 965px) {
+ .navbar-collapse{
+    position: absolute;
+    top: 106px;
+    background-color: #181a1c;
+    width: 100%;
+ }
+}
+
+@media screen and (max-width: 600px) {
+    .navbar-collapse{
+       position: absolute;
+       top: 95px;
+       background-color: #181a1c;
+       width: 100%;
+    }
+   }
 
 @media (prefers-reduced-motion: reduce) {
     .nav-link {
@@ -136,7 +144,7 @@ a.nav-link {
 }
 
 .navbar-brand img {
-    height: 5rem;
+    height: 4.5rem;
 }
 
 
