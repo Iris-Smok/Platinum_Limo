@@ -122,6 +122,7 @@ a.nav-link {
  .navbar-collapse{
     position: absolute;
     top: 106px;
+    left:0;
     background-color: #181a1c;
     width: 100%;
  }
@@ -130,7 +131,8 @@ a.nav-link {
 @media screen and (max-width: 600px) {
     .navbar-collapse{
        position: absolute;
-       top: 95px;
+       top: 97px;
+       left:0;
        background-color: #181a1c;
        width: 100%;
     }
@@ -533,7 +535,7 @@ footer {
     background-position: center center;
     background-size: cover;
     padding-top: 15rem;
-    padding-bottom: 8rem;
+    padding-bottom: 15rem;
 
 }
 
@@ -549,4 +551,8 @@ footer {
 
     }
 
+}
+
+.events-header {
+    background-image: url('https://res.cloudinary.com/irissmok/image/upload/v1689023356/Platinum%20Line%20images/events22_ru01lr.jpg');
 }
