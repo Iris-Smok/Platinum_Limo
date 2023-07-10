@@ -534,7 +534,7 @@ footer {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    padding-top: 15rem;
+    padding-top: 10rem;
     padding-bottom: 15rem;
 
 }
@@ -563,4 +563,12 @@ footer {
 
 .conference-header {
     background-image: url('https://res.cloudinary.com/irissmok/image/upload/v1689024409/Platinum%20Line%20images/conference-conventions_av2ub5.webp');
+}
+
+.corporate-header {
+    background-image: url('https://res.cloudinary.com/irissmok/image/upload/v1689024851/Platinum%20Line%20images/corporate_wba3qa.jpg');
+}
+
+.tours-header {
+    background-image: url('https://res.cloudinary.com/irissmok/image/upload/v1689025442/Platinum%20Line%20images/tours_x5tkjt.webp');
 }
