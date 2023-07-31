@@ -21,6 +21,11 @@ footer>h5 {
     border: 1px solid #bdb9b9;
     box-shadow: 0px 5px 10px 0px rgb(144 145 145 / 70%);
 }
+
+.button-style{
+    background-color:#cb3234 !important; 
+    color: #ffffff !important;
+}
 /* FADE IN ANIMATION */
 
 section {
@@ -39,8 +44,8 @@ section.active {
 /* TOP-HEADER */
 
 .top-header{
-    background-color:#D5D2CE;
-    color: #1D232A;
+    background-color:#cb3234;
+    color: #ffffff;
     text-align: center;
     padding: 10px 0px;
 }
@@ -181,10 +186,10 @@ button.navbar-toggler {
 /* Header Image */
 .header-image {
     padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-bottom: 8rem;
     text-align: center;
     color: #fff;
-    background-image: url('https://res.cloudinary.com/irissmok/image/upload/v1681791762/Platinum%20Line%20images/header-image.webp');
+    background-image: url('https://res.cloudinary.com/irissmok/image/upload/v1690834806/Platinum%20Line%20images/hero-image.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -193,8 +198,8 @@ button.navbar-toggler {
 
 .button-book-trip {
     border-radius: 4px;
-    background-color:#D5D2CE;
-    color: #1D232A;
+    background-color:#cb3234;
+    color: #ffffff;
     border: none;
     text-align: center;
     font-size: 18px;
@@ -259,8 +264,8 @@ header.header-forms .heading
 @media screen and (min-width: 600px) {
 
     .header-image {
-        padding-top: 12.5rem;
-        height: 60vh;
+        padding-top: 16.5rem;
+        height: 75vh;
     }
 
     .header-services .heading,
@@ -294,7 +299,7 @@ header.header-forms .heading
 
 @media screen and (max-width: 1300px) {
     .header-image {
-        padding-top: 8.5rem;
+        padding-top: 8rem;
         height: fit-content;
     }
 }
@@ -401,8 +406,8 @@ header.header-forms .heading
 }
 
 .our-fleet-img .btn {
-    background-color: #D5D2CE;
-    color: #1D232A;
+    background-color:#cb3234;
+    color: #ffffff;
     font-weight: 500;
 }
 
@@ -505,7 +510,7 @@ footer {
     padding-bottom: 45%;
     text-align: center;
     color: #fff;
-    background-image: url('https://res.cloudinary.com/irissmok/image/upload/v1681791762/Platinum%20Line%20images/header-image.webp');
+    background-image: url('https://res.cloudinary.com/irissmok/image/upload/v1690834806/Platinum%20Line%20images/hero-image.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -516,8 +521,8 @@ footer {
 @media screen and (min-width: 768px) {
 
     .header-forms {
-        padding-top: 13%;
-        padding-bottom: 13%;
+        padding-top: 16%;
+        padding-bottom: 16%;
     }
 
     .form-group {
@@ -534,13 +539,13 @@ footer {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    padding-top: 10rem;
-    padding-bottom: 15rem;
+    padding-top: 13rem;
+    padding-bottom: 13rem;
 
 }
 
 .occasions-header {
-    background-image: url('https://res.cloudinary.com/irissmok/image/upload/v1686346989/special-occasions_qrgkyj.jpg');
+    background-image: url('https://res.cloudinary.com/irissmok/image/upload/v1689147055/Platinum%20Line%20images/occasions_webp_compressedd_wlbuhs.jpg');
 }
 
 
@@ -554,11 +559,11 @@ footer {
 }
 
 .events-header {
-    background-image: url('https://res.cloudinary.com/irissmok/image/upload/v1689023356/Platinum%20Line%20images/events22_ru01lr.jpg');
+    background-image: url('https://res.cloudinary.com/irissmok/image/upload/v1689147729/Platinum%20Line%20images/people-celebrating-party-modified_axetd8.jpg');
 }
 
 .airport-header {
-    background-image: url('https://res.cloudinary.com/irissmok/image/upload/v1689024022/Platinum%20Line%20images/airport-transfer_mlbeih.jpg');
+    background-image: url('https://res.cloudinary.com/irissmok/image/upload/v1689107382/Platinum%20Line%20images/airport_tmqmuq.jpg');
 }
 
 .conference-header {
@@ -570,5 +575,5 @@ footer {
 }
 
 .tours-header {
-    background-image: url('https://res.cloudinary.com/irissmok/image/upload/v1689025442/Platinum%20Line%20images/tours_x5tkjt.webp');
+    background-image: url('https://res.cloudinary.com/irissmok/image/upload/v1689147178/Platinum%20Line%20images/tourse_compressed_wblprz.jpg');
 }
