@@ -253,7 +253,7 @@ header.header-image .subheading {
 
 header.header-image .heading,
 .header-services .heading,
-header.header-forms .heading
+header.bg-query-fleet .heading
  {
     font-size: 45px;
     line-height: 3rem;
@@ -269,7 +269,7 @@ header.header-forms .heading
     }
 
     .header-services .heading,
-    header.header-forms .heading {
+    header.bg-query-fleet .heading {
         font-size: 60px;
     }
 
@@ -502,30 +502,38 @@ footer {
     }
 }
 
-/* AVAILABILITY */
 
-.header-forms {
+/* AVAILABILITY & FLEET PAGES */
 
+.bg-query-fleet {
     padding-top: 45%;
     padding-bottom: 45%;
     text-align: center;
     color: #fff;
-    background-image: url('https://res.cloudinary.com/irissmok/image/upload/v1690834806/Platinum%20Line%20images/hero-image.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
 }
 
 
+.header-forms{
+    background-image: url('https://res.cloudinary.com/irissmok/image/upload/v1689148006/Platinum%20Line%20images/contact-us-image.jpg');
+}
+
+.header-fleet{
+    background-image: url('https://res.cloudinary.com/irissmok/image/upload/v1691528618/woman-getting-taxi-car_kh1bdv.jpg');
+}
+
+
 
 @media screen and (min-width: 768px) {
 
-    .header-forms {
+    .bg-query-fleet {
         padding-top: 16%;
         padding-bottom: 16%;
     }
 
-    .form-group {
+    .bg-query-fleet {
         margin-left: 20px;
     }
 }
