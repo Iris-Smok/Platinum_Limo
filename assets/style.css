@@ -299,7 +299,7 @@ header.bg-query-fleet .heading
 
 @media screen and (max-width: 1300px) {
     .header-image {
-        padding-top: 8rem;
+        padding-top: 5rem;
         height: fit-content;
     }
 }
