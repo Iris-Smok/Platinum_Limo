@@ -1,201 +1,24 @@
-:root {
-    --main-text-color: #fff;
-}
-
-
 /* GENERAL */
-
 body {
     font-family: 'Open Sans';
 }
-
-/* h1, */
-h2,
-h3,
-footer>h5 {
-    font-family: 'Spectral', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
-}
-
-
+/********* BUTTONS ********/
 .border-color {
     border: 1px solid #bdb9b9;
     box-shadow: 0px 5px 10px 0px rgb(144 145 145 / 70%);
 }
-
 .button-style{
-    background-color:#cb3234 !important; 
+    background-color:#cb3234 !important;
     color: #ffffff !important;
 }
-/* FADE IN ANIMATION */
-
-section {
-    transform: translateY(150px);
-    opacity: 0;
-    transition: 2s all ease;
-}
-
-section.active {
-    transform: translateY(0);
-    opacity: 1;
-}
-
-
-
-/* TOP-HEADER */
-
-.top-header{
-    background-color:#cb3234;
-    color: #ffffff;
-    text-align: center;
-    padding: 10px 0px;
-}
-
-
-.top-header p{
-    margin: 0;
-    line-height: 2;
-    display: inline-block;
-    padding-left: 7%;
-}
-
-/* PAGE SECTIONS */
-.page-section {
-    padding: 6rem 0
-}
-
-.page-section .section-heading.h2,
-.page-section h2.section-heading {
-    font-size: 2.5rem;
-    margin-top: 0;
-    margin-bottom: 1rem
-}
-
-.page-section .section-subheading.h3,
-.page-section h3.section-subheading {
-    font-size: 1rem;
-    font-weight: 400;
-    font-style: italic;
-    font-family: "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    margin-bottom: 4rem
-}
-
-
-/* NAV */
-nav {
-    background-color: #181a1c;
-}
-
-.nav-item {
-    margin-left: 1rem;
-}
-
-.nav-item .nav-link {
-    letter-spacing: .0625em;
-}
-
-.navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 0.5rem !important;
-    padding-left: 0.5rem !important;
-}
-
-a.nav-link {
-    display: block;
-    padding: 0.5rem 1rem;
-    color: var(--main-text-color);
-    text-decoration: none;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
-}
-
-
-.nav-item:after {
-    content: "";
-    display: block;
-    height: 1px;
-    z-index: 2;
-    box-sizing: border-box;
-    width: 35%;
-    margin-left: 7px;
-}
-
-
-.nav-item:hover:after,
-.nav-item.active:after {
-    background-color: #d5d7d8;
-}
-
-@media screen and (max-width: 965px) {
- .navbar-collapse{
-    position: absolute;
-    top: 106px;
-    left:0;
-    background-color: #181a1c;
-    width: 100%;
- }
-}
-
-@media screen and (max-width: 600px) {
-    .navbar-collapse{
-       position: absolute;
-       top: 97px;
-       left:0;
-       background-color: #181a1c;
-       width: 100%;
-    }
-   }
-
-@media (prefers-reduced-motion: reduce) {
-    .nav-link {
-        transition: none;
-    }
-}
-
-.nav-link:hover,
-.nav-link:focus,
-.nav-link.active {
-    color: #bbbbbb !important;
-}
-
-.navbar-brand img {
-    height: 4.5rem;
-}
-
-
-.navbar-collapse {
-    flex-grow: 0 !important;
-}
-
-.dropdown-menu {
-    background-color: #212529 !important;
-}
-
-a.dropdown-item {
-    color: #d5d7d8 !important;
-}
-
-a.dropdown-item:hover {
-    color: #000 !important;
-}
-
+/* nav bar button */
 button.navbar-toggler {
     color: rgba(255, 255, 255, .5);
     border-color: rgba(255, 255, 255, .1);
     font-size: .75rem;
     padding: 0.75rem;
 }
-
-/* Header Image */
-.header-image {
-    padding-top: 3rem;
-    padding-bottom: 8rem;
-    text-align: center;
-    color: #fff;
-    background-image: url('https://res.cloudinary.com/irissmok/image/upload/v1690834806/Platinum%20Line%20images/hero-image.jpg');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-}
-
-
+/* hero image book trip button */
 .button-book-trip {
     border-radius: 4px;
     background-color:#cb3234;
@@ -209,14 +32,12 @@ button.navbar-toggler {
     letter-spacing: 0.8px;
     font-weight: 500;
 }
-
 .button-book-trip span {
     cursor: pointer;
     display: inline-block;
     position: relative;
     transition: 0.5s;
 }
-
 .button-book-trip span:after {
     content: '\00bb';
     position: absolute;
@@ -226,285 +47,382 @@ button.navbar-toggler {
     transition: 0.5s;
     font-size: 30px;
 }
-
 .button-book-trip:hover span {
     padding-right: 25px;
 }
-
 .button-book-trip:hover span:after {
     opacity: 1;
     right: 0;
 }
-
-
-@supports (-webkit-touch-callout: none) {
-    header.header-image {
-        background-attachment: scroll;
-    }
-}
-
-header.header-image .subheading {
-    font-size: 1.2rem;
-    font-style: italic;
-    line-height: 1.5rem;
-    margin-bottom: 10px;
-    font-family: Lato, sans-serif
-}
-
-header.header-image .heading,
-.header-services .heading,
-header.bg-query-fleet .heading
- {
-    font-size: 45px;
-    line-height: 3rem;
-    font-family: 'Spectral', Arial, Helvetica, sans-serif;
-    text-shadow: 0.08em 0.08em 0.08em rgba(0, 0, 0, 0.4);
-}
-
-@media screen and (min-width: 600px) {
-
-    .header-image {
-        padding-top: 16.5rem;
-        height: 75vh;
-    }
-
-    .header-services .heading,
-    header.bg-query-fleet .heading {
-        font-size: 60px;
-    }
-
-
-    .navbar-brand img {
-        height: 5rem;
-    }
-
-    .nav-item:hover:after,
-    .nav-item.active:after {
-        background-color: #d5d7d8;
-        width: 100%;
-        margin-left: 0px;
-    }
-
-    header.header-image .subheading {
-        font-size: 1.5rem;
-        line-height: 1.5rem;
-    }
-
-    header.header-image .heading {
-        font-size: 3.5rem;
-        line-height: 3.25rem;
-    }
-
-}
-
-@media screen and (max-width: 1300px) {
-    .header-image {
-        padding-top: 5rem;
-        height: fit-content;
-    }
-}
-
-
-/* INTRO SECTION */
-
-.introduction-text {
-    text-align: center;
-    margin: 0 10px;
-}
-
-
-.page-section h2.section-heading {
-    font-size: 2.5rem;
-    margin-top: 0;
-    margin-bottom: 1rem;
-}
-
-@media screen and (min-width: 1200px) {
-
-    .introduction-text {
-        margin-left: 25%;
-        margin-right: 25%;
-    }
-
-}
-
-/* FEATURES */
-
-.features>.container>.row>.col-md-4 {
-    padding: 0 15px;
-}
-
-
-@media screen and (min-width: 1000px) {
-
-    .features>.container>.row>.col-md-4 {
-        padding: 0 40px;
-    }
-
-}
-
-/* SERVICES */
-
-.bg-services {
-    background-color: #212529;
-}
-
-#services .services-item .services-link {
-    position: relative;
-    display: block;
-    margin: 0 auto
-}
-
-#services .services-item .services-caption {
-    padding: 1.5rem;
-    text-align: center
-}
-
-#services .services-item .services-caption .services-caption-heading {
-    font-size: 1.5rem;
-    font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    margin-bottom: 0
-}
-
-#services .services-item .services-caption .services-caption-subheading {
-    font-style: italic;
-    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
-}
-
-#services .services-link {
-    text-decoration: none;
-    color: #fff;
-}
-
-
-/* OUR FLEET */
-.our-fleet-img {
-    max-width: 35rem;
-    margin-left: auto;
-    margin-right: auto
-}
-
-.our-fleet-img img {
-    width: 100%;
-    height: auto;
-    transition: all .5s ease;
-    transform: scale(1)
-}
-
-.our-fleet-img img:hover {
-    transform: scale(1.2) perspective(1px);
-    color: grey
-}
-
-.our-fleet-img p {
-    margin-top: -45px;
-    font-weight: 600
-}
-
-.our-fleet-img div {
-    margin-top: -15px
-}
-
+/* index our fleet buttons */
 .our-fleet-img .btn {
     background-color:#cb3234;
     color: #ffffff;
     font-weight: 500;
 }
-
 .our-fleet-img .btn:hover {
     border: 1px solid #1D232A;
     background-color:#cccac7 !important;
 }
-
-
+/*********** HEADERS ********/
+/* bg images */
+.header-forms{
+    background-image: url('https://res.cloudinary.com/irissmok/image/upload/v1691532478/woman-getting-taxi-car-modified-modified_rdhtrk.jpg');
+}
+.header-fleet{
+    background-image: url('https://res.cloudinary.com/irissmok/image/upload/v1691532410/young-male-being-uber-driver-female-client-modified_2_xmr4ud.jpg');
+}
+.occasions-header {
+    background-image: url('https://res.cloudinary.com/irissmok/image/upload/v1689147055/Platinum%20Line%20images/occasions_webp_compressedd_wlbuhs.jpg');
+}
+.events-header {
+    background-image: url('https://res.cloudinary.com/irissmok/image/upload/v1689147729/Platinum%20Line%20images/people-celebrating-party-modified_axetd8.jpg');
+}
+.airport-header {
+    background-image: url('https://res.cloudinary.com/irissmok/image/upload/v1689107382/Platinum%20Line%20images/airport_tmqmuq.jpg');
+}
+.conference-header {
+    background-image: url('https://res.cloudinary.com/irissmok/image/upload/v1689024409/Platinum%20Line%20images/conference-conventions_av2ub5.webp');
+}
+.corporate-header {
+    background-image: url('https://res.cloudinary.com/irissmok/image/upload/v1689024851/Platinum%20Line%20images/corporate_wba3qa.jpg');
+}
+.tours-header {
+    background-image: url('https://res.cloudinary.com/irissmok/image/upload/v1689147178/Platinum%20Line%20images/tourse_compressed_wblprz.jpg');
+}
+/* headers */
+h2, h3, footer>h5 {
+    font-family: 'Spectral', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" 
+}
+.top-header{
+    background-color:#cb3234;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0px;
+}
+.top-header p{
+    margin: 0;
+    line-height: 2;
+    display: inline-block;
+    padding-left: 7%;
+}
+header.header-image .heading, .header-services .heading, header.bg-query-fleet .heading {
+    font-size: 45px;
+    line-height: 3rem;
+    font-family: 'Spectral', Arial, Helvetica, sans-serif;
+    text-shadow: 0.08em 0.08em 0.08em rgba(0, 0, 0, 0.4);
+}
+header.header-image .subheading {
+    font-size: 1.2rem;
+    font-style: italic;
+    line-height: 1.5rem;
+    margin-bottom: 10px;
+    font-family: Lato, sans-serif 
+}
+/* page sections headings and subheadings */
+.page-section .section-heading.h2, .page-section h2.section-heading {
+    font-size: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 1rem 
+}
+.page-section .section-subheading.h3, .page-section h3.section-subheading {
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: italic;
+    font-family: "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    margin-bottom: 4rem 
+}
+.page-section h2.section-heading {
+    font-size: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+/* Hero Image */
+.header-image {
+    padding-top: 3rem;
+    padding-bottom: 8rem;
+    text-align: center;
+    color: #fff;
+    background-image: url('https://res.cloudinary.com/irissmok/image/upload/v1690834806/Platinum%20Line%20images/hero-image.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+@supports (-webkit-touch-callout: none) {
+    header.header-image {
+        background-attachment: scroll;
+   }
+}
+@media screen and (min-width: 600px) {
+    .header-image {
+        padding-top: 16.5rem;
+        height: 75vh;
+   }
+    .header-services .heading, header.bg-query-fleet .heading {
+        font-size: 60px;
+   }
+    .navbar-brand img {
+        height: 5rem;
+   }
+    .nav-item:hover:after, .nav-item.active:after {
+        background-color: #d5d7d8;
+        width: 100%;
+        margin-left: 0px;
+   }
+    header.header-image .subheading {
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+   }
+    header.header-image .heading {
+        font-size: 3.5rem;
+        line-height: 3.25rem;
+   }
+}
+@media screen and (max-width: 1300px) {
+    .header-image {
+        padding-top: 5rem;
+        height: fit-content;
+   }
+}
+/* services heading-image */
+.header-services {
+    text-align: center;
+    color: #fff;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding-top: 13rem;
+    padding-bottom: 13rem;
+}
+@media screen and (min-width: 768px) {
+    .header-services {
+        padding-top: 15rem;
+        padding-bottom: 15rem;
+   }
+}
+/*********** NAVIGATION ********/
+/* NAV */
+nav {
+    background-color: #181a1c;
+}
+.nav-item {
+    margin-left: 1rem;
+}
+.nav-item .nav-link {
+    letter-spacing: .0625em;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0.5rem !important;
+    padding-left: 0.5rem !important;
+}
+a.nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+.nav-item:after {
+    content: "";
+    display: block;
+    height: 1px;
+    z-index: 2;
+    box-sizing: border-box;
+    width: 35%;
+    margin-left: 7px;
+}
+.nav-item:hover:after, .nav-item.active:after {
+    background-color: #d5d7d8;
+}
+@media screen and (max-width: 965px) {
+    .navbar-collapse{
+        position: absolute;
+        top: 106px;
+        left:0;
+        background-color: #181a1c;
+        width: 100%;
+   }
+}
+@media screen and (max-width: 600px) {
+    .navbar-collapse{
+        position: absolute;
+        top: 97px;
+        left:0;
+        background-color: #181a1c;
+        width: 100%;
+   }
+}
+@media (prefers-reduced-motion: reduce) {
+    .nav-link {
+        transition: none;
+   }
+}
+.nav-link:hover, .nav-link:focus, .nav-link.active {
+    color: #bbbbbb !important;
+}
+.navbar-brand img {
+    height: 4.5rem;
+}
+.navbar-collapse {
+    flex-grow: 0 !important;
+}
+.dropdown-menu {
+    background-color: #212529 !important;
+}
+a.dropdown-item {
+    color: #d5d7d8 !important;
+}
+a.dropdown-item:hover {
+    color: #000 !important;
+}
+/********* PAGE SECTIONS ****************/
+/* fade in animation */
+section {
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+}
+section.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+/* page sections */
+.page-section {
+    padding: 6rem 0 
+}
+/* INTRO SECTION */
+.introduction-text {
+    text-align: center;
+    margin: 0 10px;
+}
+@media screen and (min-width: 1200px) {
+    .introduction-text {
+        margin-left: 25%;
+        margin-right: 25%;
+   }
+}
+/* FEATURES */
+.features>.container>.row>.col-md-4 {
+    padding: 0 15px;
+}
+@media screen and (min-width: 1000px) {
+    .features>.container>.row>.col-md-4 {
+        padding: 0 40px;
+   }
+}
+/*********** INDEX SERVICES ***********/
+.bg-services {
+    background-color: #212529;
+}
+#services .services-item .services-link {
+    position: relative;
+    display: block;
+    margin: 0 auto 
+}
+#services .services-item .services-caption {
+    padding: 1.5rem;
+    text-align: center 
+}
+#services .services-item .services-caption .services-caption-heading {
+    font-size: 1.5rem;
+    font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    margin-bottom: 0 
+}
+#services .services-item .services-caption .services-caption-subheading {
+    font-style: italic;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" 
+}
+#services .services-link {
+    text-decoration: none;
+    color: #fff;
+}
+/* OUR FLEET */
+.our-fleet-img {
+    max-width: 35rem;
+    margin-left: auto;
+    margin-right: auto 
+}
+.our-fleet-img img {
+    width: 100%;
+    height: auto;
+    transition: all .5s ease;
+    transform: scale(1) 
+}
+.our-fleet-img img:hover {
+    transform: scale(1.2) perspective(1px);
+    color: grey 
+}
+.our-fleet-img p {
+    margin-top: -45px;
+    font-weight: 600 
+}
+.our-fleet-img div {
+    margin-top: -15px 
+}
 @media (max-width:1000px) {
     .our-fleet-img p {
-        margin-top: -25px
-    }
+        margin-top: -25px 
+   }
 }
-
 @media (max-width:650px) {
     .our-fleet-img p {
-        margin-top: -50px
-    }
-
+        margin-top: -50px 
+   }
     .our-fleet-img {
-        margin-bottom: 60px
-    }
+        margin-bottom: 60px 
+   }
 }
-
 /* TESTIMONIALS */
 .ratings .fa-star {
-    color: #fbc634
+    color: #fbc634 
 }
-
-.carousel-item p,
-h5 {
+.carousel-item p, h5 {
     color: #000;
     margin-bottom: 2rem;
 }
-
-.carousel-control-next,
-.carousel-control-prev {
+.carousel-control-next, .carousel-control-prev {
     visibility: hidden;
 }
-
 .carousel .carousel-item {
     transition-duration: 2s;
 }
-
-
 .carousel-indicators [data-bs-target]{
-   background-color: #1D232A !important;
-   padding-top: 10px;
+    background-color: #1D232A !important;
+    padding-top: 10px;
 }
-
-
-
 /* FOOTER */
 .footer {
     background-color: #181a1c;
     font-size: .9rem;
 }
-
-
 footer {
-    text-align: center
+    text-align: center 
 }
-
 .logo-footer {
     max-width: 14rem;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto 
 }
-
 .logo-footer img {
     width: 100%;
-    height: auto
+    height: auto 
 }
-
 .content-to-hide-sm {
     display: none;
 }
-
 @media (min-width:768px) {
     .content-to-hide-sm {
         display: inline-block;
-    }
-
+   }
     footer {
-        text-align: left
-    }
-
+        text-align: left 
+   }
     .footer-link-policy a {
         display: block;
-        margin-right: 0 !important
-    }
+        margin-right: 0 !important 
+   }
 }
-
-
 /* AVAILABILITY & FLEET PAGES */
-
 .bg-query-fleet {
     padding-top: 45%;
     padding-bottom: 45%;
@@ -514,80 +432,16 @@ footer {
     background-position: center center;
     background-size: cover;
 }
-
-
-.header-forms{
-    background-image: url('https://res.cloudinary.com/irissmok/image/upload/v1691532478/woman-getting-taxi-car-modified-modified_rdhtrk.jpg');
-}
-
-.header-fleet{
-    background-image: url('https://res.cloudinary.com/irissmok/image/upload/v1691532410/young-male-being-uber-driver-female-client-modified_2_xmr4ud.jpg');
-}
-
-
-
 @media screen and (min-width: 768px) {
-
     .bg-query-fleet {
         padding-top: 16%;
         padding-bottom: 16%;
-    }
-
+   }
     .bg-query-fleet {
         margin-left: 20px;
-    }
+   }
 }
-
-/* SPECIAL OCCASIONS HEADER */
-
-
-.header-services {
-    text-align: center;
-    color: #fff;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    padding-top: 13rem;
-    padding-bottom: 13rem;
-
-}
-
-.occasions-header {
-    background-image: url('https://res.cloudinary.com/irissmok/image/upload/v1689147055/Platinum%20Line%20images/occasions_webp_compressedd_wlbuhs.jpg');
-}
-
-
-@media screen and (min-width: 768px) {
-    .header-services {
-        padding-top: 15rem;
-        padding-bottom: 15rem;
-
-    }
-
-}
-
-.events-header {
-    background-image: url('https://res.cloudinary.com/irissmok/image/upload/v1689147729/Platinum%20Line%20images/people-celebrating-party-modified_axetd8.jpg');
-}
-
-.airport-header {
-    background-image: url('https://res.cloudinary.com/irissmok/image/upload/v1689107382/Platinum%20Line%20images/airport_tmqmuq.jpg');
-}
-
-.conference-header {
-    background-image: url('https://res.cloudinary.com/irissmok/image/upload/v1689024409/Platinum%20Line%20images/conference-conventions_av2ub5.webp');
-}
-
-.corporate-header {
-    background-image: url('https://res.cloudinary.com/irissmok/image/upload/v1689024851/Platinum%20Line%20images/corporate_wba3qa.jpg');
-}
-
-.tours-header {
-    background-image: url('https://res.cloudinary.com/irissmok/image/upload/v1689147178/Platinum%20Line%20images/tourse_compressed_wblprz.jpg');
-}
-
 /* Car SPEC PAGE */
-
 .mb-fleet-img{
     margin-bottom: 5rem;
 }
