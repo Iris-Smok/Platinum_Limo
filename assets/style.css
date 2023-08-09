@@ -585,3 +585,9 @@ footer {
 .tours-header {
     background-image: url('https://res.cloudinary.com/irissmok/image/upload/v1689147178/Platinum%20Line%20images/tourse_compressed_wblprz.jpg');
 }
+
+/* Car SPEC PAGE */
+
+.mb-fleet-img{
+    margin-bottom: 5rem;
+}
