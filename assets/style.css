@@ -7,6 +7,7 @@ body {
     border: 1px solid #bdb9b9;
     box-shadow: 0px 5px 10px 0px rgb(144 145 145 / 70%);
 }
+
 .button-style{
     background-color:#cb3234 !important;
     color: #ffffff !important;
@@ -100,6 +101,7 @@ h2, h3, footer>h5 {
     text-align: center;
     padding: 10px 0px;
 }
+
 .top-header p{
     margin: 0;
     line-height: 2;
@@ -205,16 +207,20 @@ header.header-image .subheading {
 nav {
     background-color: #181a1c;
 }
+
 .nav-item {
     margin-left: 1rem;
 }
+
 .nav-item .nav-link {
     letter-spacing: .0625em;
 }
+
 .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 0.5rem !important;
     padding-left: 0.5rem !important;
 }
+
 a.nav-link {
     display: block;
     padding: 0.5rem 1rem;
@@ -222,6 +228,7 @@ a.nav-link {
     text-decoration: none;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
+
 .nav-item:after {
     content: "";
     display: block;
@@ -234,6 +241,7 @@ a.nav-link {
 .nav-item:hover:after, .nav-item.active:after {
     background-color: #d5d7d8;
 }
+
 @media screen and (max-width: 965px) {
     .navbar-collapse{
         position: absolute;
@@ -243,6 +251,7 @@ a.nav-link {
         width: 100%;
    }
 }
+
 @media screen and (max-width: 600px) {
     .navbar-collapse{
         position: absolute;
@@ -252,26 +261,33 @@ a.nav-link {
         width: 100%;
    }
 }
+
 @media (prefers-reduced-motion: reduce) {
     .nav-link {
         transition: none;
    }
 }
+
 .nav-link:hover, .nav-link:focus, .nav-link.active {
     color: #bbbbbb !important;
 }
+
 .navbar-brand img {
     height: 4.5rem;
 }
+
 .navbar-collapse {
     flex-grow: 0 !important;
 }
+
 .dropdown-menu {
     background-color: #212529 !important;
 }
+
 a.dropdown-item {
     color: #d5d7d8 !important;
 }
+
 a.dropdown-item:hover {
     color: #000 !important;
 }
@@ -282,88 +298,111 @@ section {
     opacity: 0;
     transition: 2s all ease;
 }
+
 section.active {
     transform: translateY(0);
     opacity: 1;
 }
+
 /* page sections */
 .page-section {
     padding: 6rem 0 
 }
+
 /* INTRO SECTION */
+
 .introduction-text {
     text-align: center;
     margin: 0 10px;
 }
+
 @media screen and (min-width: 1200px) {
     .introduction-text {
         margin-left: 25%;
         margin-right: 25%;
    }
 }
+
 /* FEATURES */
+
 .features>.container>.row>.col-md-4 {
     padding: 0 15px;
 }
+
 @media screen and (min-width: 1000px) {
     .features>.container>.row>.col-md-4 {
         padding: 0 40px;
    }
 }
+
 /*********** INDEX SERVICES ***********/
+
 .bg-services {
     background-color: #212529;
 }
+
 #services .services-item .services-link {
     position: relative;
     display: block;
     margin: 0 auto 
 }
+
 #services .services-item .services-caption {
     padding: 1.5rem;
     text-align: center 
 }
+
 #services .services-item .services-caption .services-caption-heading {
     font-size: 1.5rem;
     font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     margin-bottom: 0 
 }
+
 #services .services-item .services-caption .services-caption-subheading {
     font-style: italic;
     font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" 
 }
+
 #services .services-link {
     text-decoration: none;
     color: #fff;
 }
+
 /* OUR FLEET */
+
 .our-fleet-img {
     max-width: 35rem;
     margin-left: auto;
     margin-right: auto 
 }
+
 .our-fleet-img img {
     width: 100%;
     height: auto;
     transition: all .5s ease;
     transform: scale(1) 
 }
+
 .our-fleet-img img:hover {
     transform: scale(1.2) perspective(1px);
     color: grey 
 }
+
 .our-fleet-img p {
     margin-top: -45px;
     font-weight: 600 
 }
+
 .our-fleet-img div {
     margin-top: -15px 
 }
+
 @media (max-width:1000px) {
     .our-fleet-img p {
         margin-top: -25px 
    }
 }
+
 @media (max-width:650px) {
     .our-fleet-img p {
         margin-top: -50px 
@@ -372,7 +411,9 @@ section.active {
         margin-bottom: 60px 
    }
 }
+
 /* TESTIMONIALS */
+
 .ratings .fa-star {
     color: #fbc634 
 }
@@ -383,33 +424,42 @@ section.active {
 .carousel-control-next, .carousel-control-prev {
     visibility: hidden;
 }
+
 .carousel .carousel-item {
     transition-duration: 2s;
 }
+
 .carousel-indicators [data-bs-target]{
     background-color: #1D232A !important;
     padding-top: 10px;
 }
+
 /* FOOTER */
+
 .footer {
     background-color: #181a1c;
     font-size: .9rem;
 }
+
 footer {
     text-align: center 
 }
+
 .logo-footer {
     max-width: 14rem;
     margin-left: auto;
     margin-right: auto 
 }
+
 .logo-footer img {
     width: 100%;
     height: auto 
 }
+
 .content-to-hide-sm {
     display: none;
 }
+
 @media (min-width:768px) {
     .content-to-hide-sm {
         display: inline-block;
@@ -422,7 +472,9 @@ footer {
         margin-right: 0 !important 
    }
 }
+
 /* AVAILABILITY & FLEET PAGES */
+
 .bg-query-fleet {
     padding-top: 45%;
     padding-bottom: 45%;
@@ -432,6 +484,7 @@ footer {
     background-position: center center;
     background-size: cover;
 }
+
 @media screen and (min-width: 768px) {
     .bg-query-fleet {
         padding-top: 16%;
@@ -441,7 +494,9 @@ footer {
         margin-left: 20px;
    }
 }
+
 /* Car SPEC PAGE */
+
 .mb-fleet-img{
     margin-bottom: 5rem;
 }
