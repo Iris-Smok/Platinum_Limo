@@ -62,8 +62,8 @@ button.navbar-toggler {
     font-weight: 500;
 }
 .our-fleet-img .btn:hover {
-    border: 1px solid #1D232A;
-    background-color:#cccac7 !important;
+    background-color:#97282a !important;
+    color: #fff;
 }
 /*********** HEADERS ********/
 /* bg images */
